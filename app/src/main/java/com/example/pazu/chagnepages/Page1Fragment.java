@@ -39,6 +39,7 @@ public class Page1Fragment extends Fragment implements View.OnClickListener {
 
                 fragmentTransaction.replace(R.id.container, page2Fragment);
                 fragmentTransaction = fmgr.beginTransaction();
+                
                 fragmentTransaction.commit();
         }
     }
