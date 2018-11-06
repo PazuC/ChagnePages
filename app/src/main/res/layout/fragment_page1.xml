@@ -15,11 +15,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="This is page1" />
+
         <Button
-            android:text="go to page2"
             android:id="@+id/goToPage2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="go to page2" />
 
     </LinearLayout>
 

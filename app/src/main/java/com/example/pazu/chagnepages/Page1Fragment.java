@@ -16,19 +16,16 @@ import android.widget.Button;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Page1Fragment extends Fragment{
-    private FragmentManager fmgr;
-    private FragmentTransaction fragmentTransaction;
+public class Page1Fragment extends Fragment {
     private Button goToPage2;
-
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View fragment_page1 =   inflater.inflate(R.layout.fragment_page1, container, false);
-        goToPage2 = fragment_page1.findViewById(R.id.goToPage2);
+        View view_page1 = inflater.inflate(R.layout.fragment_page1, container, false);
+        goToPage2 = view_page1.findViewById(R.id.goToPage2);
         goToPage2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,9 +35,8 @@ public class Page1Fragment extends Fragment{
                 ft.commit();
             }
         });
-        return fragment_page1;
+        return view_page1;
     }
-
 
 
 }
